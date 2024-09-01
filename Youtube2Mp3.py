@@ -28,8 +28,10 @@ class YouTubeMP3ConverterApp:
         self.root.geometry("600x500")  # Set the size as per your requirement
         self.root.resizable(False, True)  # Disable resizing of the window
 
-        # Set application icon
-        self.set_window_icon("youtube-to-mp3.png")
+
+        ### Something wrong with Set app icon.
+        # # Set application icon
+        # self.set_window_icon("youtube-to-mp3.png")
         
         # Variables
         self.links = []
@@ -38,11 +40,11 @@ class YouTubeMP3ConverterApp:
         # UI Elements
         self.create_widgets()
 
-    def set_window_icon(self, icon_path):
-        # Load the icon image
-        self.icon_image = tk.PhotoImage(file=icon_path)
-        # Set the icon for the window
-        self.root.iconphoto(True, self.icon_image)
+    # def set_window_icon(self, icon_path):
+    #     # Load the icon image
+    #     self.icon_image = tk.PhotoImage(file=icon_path)
+    #     # Set the icon for the window
+    #     self.root.iconphoto(True, self.icon_image)
         
     def create_widgets(self):
         # Add Link Entry
